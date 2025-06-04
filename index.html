@@ -63,8 +63,8 @@
       <option value="eulerMejorado">🧠 Euler Mejorado</option>
       <option value="lagrange">📊 Interpolación de Lagrange</option>
       <option value="derivada">🧾 Derivada Funcional</option>
-      <option value="trapezoide">🖐️ Regla del Trapecio</option>
-      <option value="simpson">🖐️ Regla de Simpson</option>
+      <option value="trapezoide">📐 Regla del Trapecio</option>
+      <option value="simpson">📐 Regla de Simpson</option>
       <option value="biseccion">📍 Método de Bisección</option>
       <option value="gauss">📉 Eliminación de Gauss</option>
     </select>
@@ -167,7 +167,7 @@
           const a = parseFloat(document.getElementById("a").value);
           const b = parseFloat(document.getElementById("b").value);
           let n = parseInt(document.getElementById("n").value);
-          if (n % 2 !== 0) n += 1;
+          if (n % 2 !== 0) n += 1; // n debe ser par
           const h = (b - a) / n;
           let sum = f(a) + f(b);
           for (let i = 1; i < n; i++) {
@@ -197,3 +197,8 @@
   </script>
 </body>
 </html>
+
+
+
+
+
